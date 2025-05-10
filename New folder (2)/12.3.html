@@ -2,46 +2,207 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EVIDENCIA 3</title>
+  <title>Subtema 11.1</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f0f0f0;
-      padding: 30px;
+    :root {
+      --primary: #0066cc;
+      --accent: #00c9a7;
+      --light: #f5f9ff;
+      --text: #333;
+      --dark: #1a1a1a;
     }
-    h1 {
-      color: #222;
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--light);
+      color: var(--text);
+    }
+
+    header {
+      background: linear-gradient(90deg, var(--primary), var(--accent));
+      color: white;
+      padding: 50px 20px;
       text-align: center;
     }
-    .redirect-container {
-      max-width: 600px;
-      margin: auto;
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+    header h1 {
+      margin: 0;
+      font-size: 40px;
+      font-weight: bold;
     }
-    .redirect-link {
-      display: block;
-      margin: 10px 0;
-      padding: 10px;
-      background-color: #007BFF;
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 30px 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      margin-bottom: 30px;
+      border-left: 6px solid var(--accent);
+      border-radius: 10px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+      transition: all 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+      border-left-color: var(--primary);
+    }
+
+    .card h2 {
+      color: var(--primary);
+      margin-top: 0;
+    }
+
+    .img-right-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .img-right-row img {
+      max-width: 400px;
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .img-text {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .img-left-bottom {
+      margin-top: 25px;
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      flex-direction: row;
+    }
+
+    .img-left-bottom img {
+      max-width: 300px;
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .references {
+      background: #eeeeee;
+      padding: 25px;
+      border-radius: 10px;
+      font-size: 15px;
+      margin-top: 40px;
+      transition: all 0.3s ease;
+    }
+
+    .references:hover {
+      background-color: #e2f7ff;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.1);
+    }
+
+    .references h3 {
+      margin-top: 0;
+      color: #444;
+    }
+
+    .references a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    footer {
+      background: var(--dark);
       color: white;
       text-align: center;
-      text-decoration: none;
-      border-radius: 5px;
-      transition: background-color 0.3s ease;
+      padding: 20px;
+      font-size: 14px;
     }
-    .redirect-link:hover {
-      background-color: #0056b3;
+
+    @media (max-width: 768px) {
+      .img-right-row,
+      .img-left-bottom {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .img-left-bottom {
+        margin-top: 40px;
+      }
     }
   </style>
 </head>
 <body>
- 
 
- 
+  <header>
+    <h1>Agencia ciudadana y trabajo público</h1>
+    <p>Subtema 12.3 · Ciudadanía global en el siglo XXI: impacto de los avances tecnológicos</p>
+  </header>
+
+  <div class="container">
+
+    <div class="card">
+      <h2>Introducción</h2>
+      <p>
+        En el siglo XXI, los avances tecnológicos han transformado profundamente la noción de ciudadanía. La interconexión global, facilitada por las tecnologías de la información y la comunicación (TIC), ha dado lugar a conceptos como ciudadanía digital, transnacional y postnacional, redefiniendo las formas en que los individuos participan en la sociedad y ejercen sus derechos y deberes.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Ciudadanía digital</h2>
+      <p>
+        La ciudadanía digital se refiere a la participación activa, responsable y ética de los individuos en el entorno virtual. Implica el uso adecuado de las TIC para comunicarse, informarse, colaborar y ejercer derechos cívicos en línea. Esta forma de ciudadanía requiere el desarrollo de competencias digitales que permitan a los ciudadanos navegar de manera segura y efectiva en el mundo digital.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="img-right-row">
+        <div class="img-text">
+          <h2>Ciudadanía transnacional y postnacionalismo</h2>
+          <p>La globalización y la migración han dado lugar a la ciudadanía transnacional, donde los individuos mantienen vínculos políticos, económicos y culturales con más de un país. Este fenómeno desafía las nociones tradicionales de ciudadanía basadas en el Estado-nación. El postnacionalismo propone una ciudadanía basada en principios universales de derechos humanos y legalidad, más allá de las fronteras nacionales .
+          </div>
+        <img src="/img_cont/12_A.png" alt="Derechos Humanos Impacto">
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Impacto de los avances tecnológicos</h2>
+      <p>Los avances tecnológicos han facilitado la participación ciudadana a través de plataformas digitales, permitiendo una mayor inclusión y acceso a la información. Sin embargo, también presentan desafíos como la brecha digital, la desinformación y la necesidad de regulaciones que protejan los derechos de los ciudadanos en el entorno digital .</p>
+      <div class="img-left-bottom">
+        <img src="/img_cont/12_B.jpg" alt="Desafíos Actuales">
+      </div>
+    </div>
+
+    <div class="references">
+      <h3>Referencias (formato APA)</h3>
+    <ul>
+      <li>Euroinnova. (2024). Ciudadanía digital: la ciudadanía del siglo XXI. Recuperado de <a href="https://www.euroinnova.com/articulos/escuelaiberoamericana/ciudadania-digital" target="_blank">euroinnova.com</a></li>
+      <li>Reunid. (2023). Construir ciudadanía global en la era del capitalismo digital. Recuperado de <a href="https://reunid.eu/2023/10/13/construir-ciudadania-global-en-la-era-del-capitalismo-digital/" target="_blank">reunid.eu</a></li>
+      <li>UNESCO. (2025). Lo que hay que saber sobre la educación para la ciudadanía mundial. Recuperado de <a href="https://www.unesco.org/es/global-citizenship-peace-education/need-know" target="_blank">unesco.org</a></li>
+    </ul>
+    </div>
+
+  
+    <div class="references">
+      <center>
+      <ul>
+        <a style="font-size: 25px;" href="index1.html">MENU SUBTEMAS</a>
+      </ul>
+      </center>
+    </div>
+  
+    
   </div>
+
+  <footer>
+    &copy; 2025 · Todos los derechos reservados
+  </footer>
+
 </body>
 </html>

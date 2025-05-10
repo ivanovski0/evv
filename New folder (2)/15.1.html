@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Subtema 11.1</title>
+  <style>
+    :root {
+      --primary: #0066cc;
+      --accent: #00c9a7;
+      --light: #f5f9ff;
+      --text: #333;
+      --dark: #1a1a1a;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--light);
+      color: var(--text);
+    }
+
+    header {
+      background: linear-gradient(90deg, var(--primary), var(--accent));
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 40px;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 30px 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      margin-bottom: 30px;
+      border-left: 6px solid var(--accent);
+      border-radius: 10px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+      transition: all 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+      border-left-color: var(--primary);
+    }
+
+    .card h2 {
+      color: var(--primary);
+      margin-top: 0;
+    }
+
+    .img-right-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .img-right-row img {
+      max-width: 400px;
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .img-text {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .img-left-bottom {
+      margin-top: 25px;
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      flex-direction: row;
+    }
+
+    .img-left-bottom img {
+      max-width: 300px;
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .references {
+      background: #eeeeee;
+      padding: 25px;
+      border-radius: 10px;
+      font-size: 15px;
+      margin-top: 40px;
+      transition: all 0.3s ease;
+    }
+
+    .references:hover {
+      background-color: #e2f7ff;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.1);
+    }
+
+    .references h3 {
+      margin-top: 0;
+      color: #444;
+    }
+
+    .references a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    footer {
+      background: var(--dark);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .img-right-row,
+      .img-left-bottom {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .img-left-bottom {
+        margin-top: 40px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Ética planetaria</h1>
+    <p>Subtema 15.1: Ética planetaria</p>
+  </header>
+
+  <div class="container">
+
+    <div class="card">
+      <h2>¿Qué es la ética planetaria?</h2>
+      <p>
+        La ética planetaria, propuesta por Leonardo Boff, teólogo brasileño y uno de los redactores de la Carta de la Tierra, plantea una nueva forma de ética global centrada en la responsabilidad ambiental y el cuidado del planeta. Esta ética surge como respuesta a las crisis ecológicas y sociales provocadas por un modelo de desarrollo insostenible que prioriza el crecimiento económico sobre la conservación de la naturaleza y la dignidad humana.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Fundamentos de la Ética Planetaria</h2>
+      <p>
+        Leonardo Boff advierte que la humanidad enfrenta una encrucijada: continuar con un modelo de explotación que conduce al colapso ecológico o adoptar una ética del cuidado que promueva la sostenibilidad y la justicia social.
+
+Carol Gilligan, psicóloga estadounidense, desarrolla la teoría de la ética del cuidado, que enfatiza la importancia de las relaciones interpersonales y la responsabilidad hacia los demás como base de la moralidad.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Ejemplo de aplicación</h2>
+      <p>
+        Grupo Bimbo, una de las empresas panificadoras más grandes del mundo, ha implementado diversas iniciativas alineadas con la ética planetaria, promoviendo la sostenibilidad y el cuidado del medio ambiente:
+
+Energía Renovable: Opera con energía eléctrica 100% renovable en sus instalaciones en México y Estados Unidos, gracias a parques eólicos como Piedra Larga y Santa Rita East.
+Wikipedia, la enciclopedia libre
+
+Movilidad Sustentable: Cuenta con la flotilla de vehículos eléctricos más grande de México, desarrollada por su filial Moldex, con el objetivo de reducir las emisiones de CO₂.
+Wikipedia, la enciclopedia libre
+
+Gestión de Residuos: Implementó el programa "Sin Dejar Huella", enfocándose en que el 100% de sus empaques sean reciclables, biodegradables o compostables para 2025.
+
+      </p>
+      <div class="a">
+        <center><img src="/img_cont/15_B.png" alt="Desafíos Actuales"></center>
+      </div>
+    </div>
+
+    <div class="references">
+      <h3>Referencias (formato APA)</h3>
+      <ul>
+  <li>Boff, L. (2004). Del iceberg al Arca de Noé: nacimiento de una ética planetaria. Editorial Trotta.</li>
+  <li>Grupo Bimbo. (2025). Sustentabilidad. Recuperado de <a href="https://www.grupobimbo.com/es/sustentabilidad" target="_blank">grupobimbo.com</a></li>
+  <li>Fundación Sonría. (2024). Construyendo una misión ética planetaria. Recuperado de <a href="https://sonria.com/construyendo-una-mision-etica-planetaria/" target="_blank">sonria.com</a></li>
+</ul>
+
+    </div>
+
+  
+    <div class="references">
+      <center>
+      <ul>
+        <a style="font-size: 25px;" href="index1.html">MENU SUBTEMAS</a>
+      </ul>
+      </center>
+    </div>
+  
+    
+  </div>
+
+  <footer>
+    &copy; 2025 · Todos los derechos reservados
+  </footer>
+
+</body>
+</html>
